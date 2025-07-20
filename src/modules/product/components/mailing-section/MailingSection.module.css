@@ -1,0 +1,35 @@
+.section {
+  text-align: center;
+  padding: 36px 0;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+.title {
+  font-family: "Berold";
+  font-size: 28px;
+  font-weight: 100;
+  line-height: 1.4;
+  & > strong {
+    font-family: inherit;
+    color: var(--primary);
+  }
+}
+.form {
+  display: flex;
+  align-items: end;
+  gap: 16px;
+  padding: 32px 24px;
+  border: 1px solid var(--border);
+  box-sizing: border-box;
+}
+@media (max-width: 768px) {
+  .form{
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,13 @@
+.container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 24px 0;
+}
+.container > * {
+  color: var(--ui-gray);
+  text-decoration: none;
+  &[data-status="active"] {
+    color: var(--text);
+  }
+}

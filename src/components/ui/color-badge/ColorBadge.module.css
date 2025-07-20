@@ -1,0 +1,16 @@
+.badge {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.color {
+  width: 20px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+}
+.color[data-is-white] {
+  border: 1px solid var(--border);
+}
+.descriptor {
+  color: var(--text);
+}

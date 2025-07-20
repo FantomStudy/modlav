@@ -1,0 +1,28 @@
+.page {
+  display: flex;
+}
+.catalog {
+  flex: 1;
+}
+.catalogGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 16px;
+  padding: 24px 0;
+}
+.buttonContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 1024px) {
+  .catalogGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 768px) {
+  .catalogGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

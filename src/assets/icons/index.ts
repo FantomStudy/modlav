@@ -1,0 +1,12 @@
+export { default as BagIcon } from "./bag-icon.svg?react";
+export { default as ClassmatesIcon } from "./classmates-icon.svg?react";
+export { default as HeartIcon } from "./heart-icon.svg?react";
+export { default as MailIcon } from "./mail-icon.svg?react";
+export { default as MinusIcon } from "./minus-icon.svg?react";
+export { default as PhoneIcon } from "./phone-icon.svg?react";
+export { default as PlusIcon } from "./plus-icon.svg?react";
+export { default as SearchIcon } from "./search-icon.svg?react";
+export { default as TelegramIcon } from "./telegram-icon.svg?react";
+export { default as UserIcon } from "./user-icon.svg?react";
+export { default as ArrowIcon } from "./arrow-icon.svg?react";
+export { default as MenuIcon } from "./menu-icon.svg?react";

@@ -1,0 +1,43 @@
+.gallery {
+  display: flex;
+  gap: 8px;
+}
+
+.controls {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  overflow: scroll;
+  scrollbar-width: none;
+}
+.controller {
+  padding: 0;
+  img {
+    width: 100px;
+    height: 100px;
+  }
+}
+.active {
+  border: 1px solid var(--primary);
+}
+
+.photoContainer {
+  flex: 1;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+  }
+}
+@media (max-width: 1024px) {
+  .gallery {
+    flex-direction: column-reverse;
+  }
+  .controls {
+    flex-direction: row;
+    padding: 12px;
+    padding-top: 0;
+  }
+}

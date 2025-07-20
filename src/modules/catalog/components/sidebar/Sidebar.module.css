@@ -1,0 +1,31 @@
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  margin-left: -48px;
+  margin-right: 24px;
+  max-width: 227px;
+  width: 100%;
+  height: calc(100dvh - var(--header-height));
+  overflow-y: scroll;
+  text-overflow: ellipsis;
+  scrollbar-width: none;
+  overscroll-behavior-y: contain;
+  border-right: 1px solid var(--border);
+  position: sticky;
+  top: var(--header-height);
+}
+.sidebarItem {
+  text-decoration: none;
+  color: var(--text);
+  padding: 12px 0 12px 48px;
+  transition: 0.2s color ease-in-out;
+  &:hover {
+    color: var(--primary);
+  }
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    display: none;
+  }
+}
